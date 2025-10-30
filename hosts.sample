@@ -1,5 +1,9 @@
 
-[splunkhosts]
-my-host.splk.me ansible_host=172.16.1.1
+[full]
+192.168.0.157
+
+[uf]
+192.168.0.202
+
 
  
