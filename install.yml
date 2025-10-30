@@ -2,13 +2,13 @@
 # This playbook deploys a basic Splunk Enterprise (Core) installation
 
 - name: Apply prereqs to all nodes
-  hosts: all
+  hosts: full
   gather_facts: no
   roles:
     - prereqs
 
 - name: Install Splunk
-  hosts: all
+  hosts: full
   roles:
     - core-install
 
