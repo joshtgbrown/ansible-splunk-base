@@ -4,17 +4,17 @@
 #  2) Installs a base image of Splunk Enterprise.
 
 - name: Apply prereqs to all nodes
-  hosts: all
+  hosts: full
   gather_facts: no
   roles:
     - prereqs
 
 - name: Basic OS Configuration & Updates
-  hosts: all
+  hosts: full
   roles:
     - os-config    
 
 - name: Install Splunk
-  hosts: all
+  hosts: full
   roles:
     - core-install
